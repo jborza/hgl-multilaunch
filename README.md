@@ -9,7 +9,28 @@ This repository contains an example script for launching a game simultaneously w
 5. Launch the game you want to play and exit it again.
 6. In the command line where you launched HGL you will see a line containing the full launch command for your game. Copy everything that comes after the name of the game (in this case starting with `HEROIC_APP_NAME`). It will look something like this:
 ```
-(07:18:46) INFO:    [Legendary]:        Launching Shadow of the Tomb Raider: Definitive Edition: HEROIC_APP_NAME=890d9cf396d04922a1559333df419fed HEROIC_APP_RUNNER=legendary GAMEID=umu-0 HEROIC_APP_SOURCE=epic STORE=egs STEAM_COMPAT_INSTALL_PATH=/home/user/Games/Heroic/ShadowoftheTombRaider LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/user/.steam/steam WINEPREFIX="/home/user/Games/Heroic/Prefixes/default/Shadow of the Tomb Raider Definitive Edition" STEAM_COMPAT_DATA_PATH="/home/user/Games/Heroic/Prefixes/default/Shadow of the Tomb Raider Definitive Edition" PROTONPATH=/home/user/.config/heroic/tools/proton/Proton-GE-latest WINE_FULLSCREEN_FSR=0 PROTON_DISABLE_NVAPI=1 PROTON_EAC_RUNTIME=/home/user/.config/heroic/tools/runtimes/eac_runtime PROTON_BATTLEYE_RUNTIME=/home/user/.config/heroic/tools/runtimes/battleye_runtime STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-ShadowoftheTombRaider PROTON_LOG_DIR=/home/user LEGENDARY_CONFIG_PATH=/home/user/.config/heroic/legendaryConfig/legendary /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary launch 890d9cf396d04922a1559333df419fed --no-wine --wrapper " "/home/user/.config/heroic/tools/proton/Proton-GE-latest/proton" waitforexitandrun" --language en
+(07:18:46) INFO:    [Legendary]:        Launching Shadow of the Tomb Raider: Definitive Edition:
+HEROIC_APP_NAME=890d9cf396d04922a1559333df419fed HEROIC_APP_RUNNER=legendary GAMEID=umu-0
+HEROIC_APP_SOURCE=epic
+STORE=egs
+STEAM_COMPAT_INSTALL_PATH=/home/user/Games/Heroic/ShadowoftheTombRaider
+LD_PRELOAD=
+STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/user/.steam/steam
+WINEPREFIX="/home/user/Games/Heroic/Prefixes/default/Shadow of the Tomb Raider Definitive Edition"
+STEAM_COMPAT_DATA_PATH="/home/user/Games/Heroic/Prefixes/default/Shadow of the Tomb Raider Definitive Edition"
+PROTONPATH=/home/user/.config/heroic/tools/proton/Proton-GE-latest
+WINE_FULLSCREEN_FSR=0
+PROTON_DISABLE_NVAPI=1
+PROTON_EAC_RUNTIME=/home/user/.config/heroic/tools/runtimes/eac_runtime
+PROTON_BATTLEYE_RUNTIME=/home/user/.config/heroic/tools/runtimes/battleye_runtime
+STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-ShadowoftheTombRaider
+PROTON_LOG_DIR=/home/user
+LEGENDARY_CONFIG_PATH=/home/user/.config/heroic/legendaryConfig/legendary /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary
+launch
+890d9cf396d04922a1559333df419fed
+--no-wine
+--wrapper " "/home/user/.config/heroic/tools/proton/Proton-GE-latest/proton" waitforexitandrun"
+--language en
 ```
 7. Create a new script as follows:
    - Write every `VARIABLE_NAME=value` entry in the command that is separated by a space on a separate line and add `export ` at the start of every such line. See example to get a picture of how to do it.
